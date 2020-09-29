@@ -2,19 +2,19 @@ package com.learning;
 import java.util.regex.*;
 
 public class Registration {
-	private static final Pattern Email = Pattern.compile("[0-9]{2}\\s[6-9]{1}[0-9]{9}");
+	private static final Pattern Password = Pattern.compile("[a-z A-Z 0-9]{8,}");
     private static boolean checkName(String name) {
-        return Email.matcher(name).matches();
+        return Password.matcher(name).matches();
     }
 
 	public static void main(String[] args) {
 		System.out.println("Welcome to user registration problem");
-		boolean flag =checkName("91 6648124789");
+		boolean flag =checkName("6648124abAc");
 		if(flag){
-			System.out.println("Valid number");
+			System.out.println("Valid password");
 		}
 		else{
-			System.out.println("Invalid number");
+			System.out.println("Invalid password");
 		}
 	}
 	
