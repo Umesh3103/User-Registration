@@ -9,12 +9,12 @@ public class Registration {
 
 	public static void main(String[] args) {
 		System.out.println("Welcome to user registration problem");
-		boolean flag =checkName("Vikas");
+		boolean flag =checkName("Sharma");
 		if(flag){
-			System.out.println("Valid first name");
+			System.out.println("Valid Last name");
 		}
 		else{
-			System.out.println("Invalid first name");
+			System.out.println("Invalid Last name");
 		}
 	}
 	
